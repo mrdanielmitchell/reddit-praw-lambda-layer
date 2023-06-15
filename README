@@ -1,0 +1,13 @@
+# Create the python directory (or clear it if updating)
+mkdir python
+cd python
+
+# Install the package
+pip3 install praw -t .
+
+# Zip the package
+# *** Your zip file should have a folder named python with all content inside
+cd ..
+zip -r praw_layer.zip .
+
+# Upload zip file to Lambda
